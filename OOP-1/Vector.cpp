@@ -9,10 +9,10 @@ CMyVector::CMyVector(const CMyVector &v)
 {
 	int size = SIZE;
 	m_vector = new int[size];
-
-	m_vector[0] = v.m_vector[0];
-	m_vector[1] = v.m_vector[1];
-	m_vector[2] = v.m_vector[2];
+	for (int i = 0; i < SIZE; i++)
+	{
+		this->m_vector[i] = v.m_vector[i];
+	}
 }
 CMyVector::CMyVector(int x, int y, int z)
 {
@@ -64,6 +64,7 @@ int CMyVector::V1_minus_V2(CMyVector &v2)
 		s = m_vector[i] - v2.m_vector[i];
 		v3.m_vector[i] = s;
 	}
+	this->m_vector;
 	std::cout << "Minus: "; v1.print(); std::cout << "- "; v2.print();
 	std::cout << std::endl;
 	std::cout << "Result: ";v3.print();
