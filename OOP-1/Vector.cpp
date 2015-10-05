@@ -2,7 +2,7 @@
 #include "Vector.h"
 #include "math.h"
 #include <iostream>
-#define TEST 1
+
 
 
 CMyVector::CMyVector(const CMyVector &v)

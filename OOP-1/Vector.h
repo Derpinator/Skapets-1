@@ -7,7 +7,7 @@ class CMyVector
 private:
 	int* m_vector;
 public:
-	CMyVector(const int x = NIL, const int y = NIL, const int z = NIL);//вектор размера три 0.0.0//
+	CMyVector(const int x = NIL, const int y = NIL, const int z = NIL);//вектор размера три 0.0.0
 	CMyVector(const CMyVector &v);
 	~CMyVector();
 	int	CMyVector::V1_plus_V2(CMyVector &v1);//++
